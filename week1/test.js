@@ -116,12 +116,9 @@ let books = {
 
 // for loop to read fields of every object(item) in books object
 let ul1 = document.createElement("ul");
-<<<<<<< HEAD
 ul1.className = "ul-tab"; //Add CSS class to DOM object
-=======
- ul1.className = "ul-tab"; //Add CSS class to DOM object
+ul1.className = "ul-tab"; //Add CSS class to DOM object
 
->>>>>>> 10ad8d6e7220abe9a62c8d147cf3e4a32dea9906
 for (let key in books) {
 
     let li = document.createElement("li");
@@ -138,11 +135,7 @@ for (let key in books) {
     h3.textContent += (books[key].language);
     li.appendChild(h3);
     li.className = "li-tab"; //Add CSS class to DOM object
-<<<<<<< HEAD
 
-=======
-   
->>>>>>> 10ad8d6e7220abe9a62c8d147cf3e4a32dea9906
     ul1.appendChild(li);
 
 
@@ -182,10 +175,7 @@ let booksImages = {
         "/lesmiserables.jpg"
 
 };
-<<<<<<< HEAD
-=======
 
->>>>>>> 10ad8d6e7220abe9a62c8d147cf3e4a32dea9906
 // loop to get source image and link to each image
 Object.keys(booksImages).forEach(function (key) {
 
@@ -225,8 +215,4 @@ for (let key in booksImages) {
     li.appendChild(bookCover);
     ul.appendChild(li);
 }
-<<<<<<< HEAD
 */
-=======
-*/
->>>>>>> 10ad8d6e7220abe9a62c8d147cf3e4a32dea9906
