@@ -59,7 +59,7 @@ function repeatStringNumTimes(str, num) {
 
     let times = 0;
     let text = "";
-    if (num === 0) {
+    if (num <= 0) {
         return "";
     }
     for (times = 0; times < num; times++) {
@@ -68,13 +68,14 @@ function repeatStringNumTimes(str, num) {
     return text;
 }
 console.log(repeatStringNumTimes("abc", 3));
+console.log(repeatStringNumTimes("abc", -4));
 
 //3.2 A while loop.
 function repeatStringNumTimes(str, num) {
 
     let times = 0;
     let text = "";
-    if (num === 0) {
+    if (num <= 0) {
         return "";
     }
     while (times < num) {
@@ -84,15 +85,17 @@ function repeatStringNumTimes(str, num) {
     return text;
 }
 console.log(repeatStringNumTimes("abc", 3));
+console.log(repeatStringNumTimes("abc", -1));
 
 //3.3 A do loop.
 function repeatStringNumTimes(str, num) {
 
     let times = 0;
     let text = "";
-    if (num === 0) {
+    if (num <= 0) {
         return "";
     }
+
     do {
 
         text = text + str;
@@ -102,6 +105,7 @@ function repeatStringNumTimes(str, num) {
     return text;
 }
 console.log(repeatStringNumTimes("abc", 3));
+console.log(repeatStringNumTimes("abc", -1));
 
 //4.Some practice with objects https://www.freecodecamp.com/challenges/construct-javascript-objects-with-functions
 
