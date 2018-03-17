@@ -2,11 +2,20 @@
 
 //1.Write a function that would allow you to do this:
 
-let addSix = function createBase(num) {
-    return num + 6;
-};
-console.log(addSix(10)); // returns 16
-console.log(addSix(21)); // returns 27
+function createBase(num) {
+    return function (base) {
+        return console.log(num + base);
+    };
+}
+
+let addSix = createBase(6);
+addSix(4); //10
+addSix(5); //11
+
+let addSeven = createBase(7);
+addSeven(7); //14
+addSeven(10); //17
+
 
 //2.Bonus: Write a function takes this array ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c'] 
 //and returns an array which only has unique values in it(so it removes the duplicate ones).
