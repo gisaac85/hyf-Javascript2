@@ -59,9 +59,9 @@ function repeatStringNumTimes(str, num) {
 
     let times = 0;
     let text = "";
-    if (num <= 0) {
-        return "";
-    }
+    //if (num <= 0) {
+    //  return "";
+    //}
     for (times = 0; times < num; times++) {
         text = text + str;
     }
@@ -75,9 +75,9 @@ function repeatStringNumTimes(str, num) {
 
     let times = 0;
     let text = "";
-    if (num <= 0) {
-        return "";
-    }
+    // if (num <= 0) {
+    //   return "";
+    //}
     while (times < num) {
         times += 1;
         text = text + str;
