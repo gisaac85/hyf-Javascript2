@@ -4,17 +4,17 @@
 
 function createBase(num) {
     return function (base) {
-        return console.log(num + base);
+        return num + base;
     };
 }
 
 let addSix = createBase(6);
-addSix(4); //10
-addSix(5); //11
+console.log(addSix(4)); //10
+console.log(addSix(5)); //11
 
 let addSeven = createBase(7);
-addSeven(7); //14
-addSeven(10); //17
+console.log(addSeven(7)); //14
+console.log(addSeven(10)); //17
 
 
 //2.Bonus: Write a function takes this array ['a', 'b', 'c', 'd', 'a', 'e', 'f', 'c'] 
