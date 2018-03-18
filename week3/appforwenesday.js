@@ -55,7 +55,7 @@ threeFive(10, 15, sayThree, sayFive);
 //3.Please solve this problem using: https://www.freecodecamp.com/challenges/repeat-a-string-repeat-a-string
 
 //3.1 A for loop.
-function repeatStringNumTimes(str, num) {
+function repeatStringNumTimes1(str, num) {
 
     let times = 0;
     let text = "";
@@ -67,11 +67,11 @@ function repeatStringNumTimes(str, num) {
     }
     return text;
 }
-console.log(repeatStringNumTimes("abc", 3));
-console.log(repeatStringNumTimes("abc", -4));
+console.log(repeatStringNumTimes1("abc", 3));
+console.log(repeatStringNumTimes1("abc", -4));
 
 //3.2 A while loop.
-function repeatStringNumTimes(str, num) {
+function repeatStringNumTimes2(str, num) {
 
     let times = 0;
     let text = "";
@@ -84,11 +84,11 @@ function repeatStringNumTimes(str, num) {
     }
     return text;
 }
-console.log(repeatStringNumTimes("abc", 3));
-console.log(repeatStringNumTimes("abc", -1));
+console.log(repeatStringNumTimes2("abc", 3));
+console.log(repeatStringNumTimes2("abc", -1));
 
 //3.3 A do loop.
-function repeatStringNumTimes(str, num) {
+function repeatStringNumTimes3(str, num) {
 
     let times = 0;
     let text = "";
@@ -104,8 +104,8 @@ function repeatStringNumTimes(str, num) {
     while (times < num);
     return text;
 }
-console.log(repeatStringNumTimes("abc", 3));
-console.log(repeatStringNumTimes("abc", -1));
+console.log(repeatStringNumTimes3("abc", 3));
+console.log(repeatStringNumTimes3("abc", -1));
 
 //4.Some practice with objects https://www.freecodecamp.com/challenges/construct-javascript-objects-with-functions
 
